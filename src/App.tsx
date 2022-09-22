@@ -1,9 +1,14 @@
-import React from 'react';
+import Header from './components/Header';
+import JumpToTop from './components/JumpToTop';
+import Videos from './components/Videos';
+import './global.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello World!
+    <div>
+      <Header />
+      <JumpToTop />
+      <Videos />
     </div>
   );
 }
