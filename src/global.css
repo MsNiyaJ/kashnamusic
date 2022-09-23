@@ -22,6 +22,10 @@ body {
   fill: #1da1f1;
 }
 
+.spotify:hover {
+  fill: #1bd760;
+}
+
 .header-container {
   background-color: black;
 }
