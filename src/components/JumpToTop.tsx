@@ -7,8 +7,6 @@ const JumpToTop = () => {
       top: 0,
       behavior: 'smooth',
     });
-
-    window.location.replace('/');
   };
 
   return (
