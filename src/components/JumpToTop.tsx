@@ -12,6 +12,7 @@ const JumpToTop = () => {
   return (
     <div onClick={jumpToTop} className="jump-to-top">
       <ArrowUp />
+      <p>TOP</p>
     </div>
   );
 };
