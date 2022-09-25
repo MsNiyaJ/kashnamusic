@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import SocialLinks from './SocialLinks';
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
               <a href="#videos"> LISTEN NOW</a>
             </button>
           </div>
-          <Header />
+          <SocialLinks />
         </div>
       </div>
     </div>
