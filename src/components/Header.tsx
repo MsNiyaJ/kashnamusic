@@ -2,7 +2,7 @@ import React from 'react';
 import InstagramIcon from './icons/InstagramIcon';
 import SpotifyIcon from './icons/SpotifyIcon';
 import TwitterIcon from './icons/TwitterIcon';
-import YouTubeIcon from './YouTubeIcon';
+import YouTubeIcon from './icons/YouTubeIcon';
 
 const Header = () => {
   return (
