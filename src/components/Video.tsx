@@ -13,7 +13,7 @@ const Video = ({ src, title }: IVideo) => {
         title={title}
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       />
-      <h2>{title}</h2>
+      <h2>{title.toUpperCase()}</h2>
     </div>
   );
 };

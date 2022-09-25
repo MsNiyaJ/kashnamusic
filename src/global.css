@@ -3,7 +3,6 @@ body {
   background-color: #5689b0;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  --blue: #94bad7;
 }
 
 .icon {
@@ -41,6 +40,16 @@ body {
 
 #videos {
   text-align: center;
+}
+
+.video-container {
+  margin: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.video-container h2 {
+  margin: 0;
+  padding: 1rem 0;
 }
 
 iframe {
@@ -97,17 +106,13 @@ iframe {
   margin: 2rem 0;
   padding: 1rem;
   font-weight: 600;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .hero-text button:hover {
   background-color: #94bad7;
-  cursor: pointer;
-}
-
-.hero-text button a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
 }
 
 /* MEDIA QUERIES */
@@ -124,6 +129,14 @@ iframe {
 
   iframe {
     height: 25rem;
+  }
+
+  #videos h1 {
+    font-size: 4rem;
+  }
+
+  .video-container {
+    font-size: 2rem;
   }
 }
 

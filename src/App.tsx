@@ -8,7 +8,9 @@ function App() {
     <div>
       <Hero />
       <JumpToTop />
-      <Videos />
+      <main>
+        <Videos />
+      </main>
     </div>
   );
 }
