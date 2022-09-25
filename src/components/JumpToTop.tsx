@@ -1,10 +1,12 @@
 import React from 'react';
-import ArrowUp from './ArrowUp';
+import ArrowUp from './icons/ArrowUp';
 
 const JumpToTop = () => {
   const jumpToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
