@@ -9,6 +9,7 @@ const ArrowUp = () => {
       strokeWidth={1.5}
       stroke="currentColor"
       className="icon"
+      aria-label="up-arrow"
     >
       <path
         strokeLinecap="round"
