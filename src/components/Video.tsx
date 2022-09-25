@@ -11,7 +11,7 @@ const Video = ({ src, title }: IVideo) => {
       <iframe
         src={src}
         title={title}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       />
       <h2>{title}</h2>
     </div>
