@@ -1,17 +1,23 @@
 body {
   margin: 0;
-  background-color: #94bad7;
-  color: black;
-  text-align: center;
+  background-color: #5689b0;
+  color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  --blue: #94bad7;
 }
 
-.logo {
-  font-size: 50px;
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
 .instagram:hover {
   fill: #f7c506;
+}
+
+.youtube {
+  width: 50px;
+  height: 50px;
 }
 
 .youtube:hover {
@@ -26,96 +32,160 @@ body {
   fill: #1bd760;
 }
 
-.header-container {
-  background-color: black;
-}
-
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  color: white;
-  padding: 0 3rem;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .social-links {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 1rem;
 }
 
-/* .donate-button {
-  background-color: rgb(255, 204, 0);
-  border: none;
-  padding: 0 1rem;
-  height: 2rem;
+#videos {
+  text-align: center;
 }
-
-.donate-button:hover {
-  opacity: 0.8;
-} */
-
-/* .hero-container {
-  width: 100%;
-} */
-
-.hero-image {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.videos-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-/* .video-container {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 70vh;
-  border: none;
-}
-
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-} */
 
 iframe {
-  width: 100%;
-  height: 400px;
+  width: 80%;
   border: none;
 }
 
 .jump-to-top {
   position: fixed;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 1rem;
-  background-color: rgba(255, 255, 255, 0.385);
+  background-color: rgba(60, 60, 60, 0.385);
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+  padding: 0.5rem;
+  text-align: center;
 }
-@media (min-width: 600px) {
-  .hero-image {
-    width: 600px;
+
+.jump-to-top p {
+  margin: 0;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(163, 197, 255, 0.3),
+      rgba(100, 100, 100, 0.3)
+    ),
+    url(/public/images/studio-lg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  height: 50rem;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 20px;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero-text button {
+  background-color: #5689b0;
+  border: none;
+  margin: 2rem 0;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.hero-text button:hover {
+  background-color: #94bad7;
+  cursor: pointer;
+}
+
+.hero-text button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile - M */
+@media (min-width: 375px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .hero-text p {
+    font-size: 35px;
   }
 
   iframe {
-    width: 600px;
-    height: 600px;
+    height: 25rem;
+  }
+}
+
+/* Mobile - L */
+@media (min-width: 425px) {
+  .hero-text p {
+    font-size: 40px;
+    letter-spacing: 5px;
   }
 
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
+  iframe {
+    height: 30rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 80px;
+  }
+
+  .hero-text p {
+    letter-spacing: 20px;
+  }
+
+  .hero-text button a {
+    font-size: 15px;
+  }
+
+  iframe {
+    height: 40rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 100px;
+  }
+
+  .hero-text p {
+    font-size: 50px;
+  }
+
+  iframe {
+    height: 45rem;
+  }
+}
+
+/* Laptop - L */
+@media (min-width: 1440px) {
+  .hero-text button a {
+    font-size: 25px;
+  }
+
+  iframe {
+    width: 768px;
+    height: 768px;
   }
 }
